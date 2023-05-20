@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Filter</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <p>Filter ui cards via their profession.</p><br><br>
+
+  
+  <select id="profession">
+    <option value="">profession</option>
+    <option value="developer">Developer</option>
+    <option value="admin">Admin</option>
+  </select><br><br>
+  <div id="userList"></div><br><br>
+  <button  id="btn" onclick="filterUsers()">Filter</button><br><br>
+
+ 
+ 
+
+  <h3>Add a new User</h3><br>
+  
+  <input type="text" id="nameInput" class="item" placeholder="Name">
+  <select class="item" id="newProfession">
+      <option value="">profession</option>
+      <option value="developer">Developer</option>
+      <option value="admin">Admin</option>
+    </select>
+    <input class="item" type="text" id="ageInput" placeholder="Age"><br><br>
+  <button id="btn" onclick="addUser()">Add User</button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
